@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+   
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="Denis"></a>
+    
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="Foto de perfil Denis Grijalva">
+            </div>
+            <h1>DENIS GRIJALVA</h1>
+            <h2>Ingeniero de Software</h2>
+            <div class="redes">
+
+                <a href="https://teams.live.com/l/invite/FAA3TcQhH0DI4lVvAE"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-microsoft-teams" viewBox="0 0 16 16">
+                    <path d="M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0m-2.238 9.488-.12-.002a5.2 5.2 0 0 0 .381-2.07V6.306a1.7 1.7 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.6 2.6 0 0 1-2.598 2.598z"/>
+                    <path d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.68.68 0 0 1-.682.682H.682A.68.68 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945z"/>
+                  </svg></a>
+                <a href="https://github.com/denis25dic"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:denis25dic@gmail.com ; devgtech@outlook.com"><i class="fas fa-envelope-square"></i></a>
+                <a href="https://www.linkedin.com/in/denis-grijalva"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Denis Grijalva.</span> Soy apasionado por la tecnología, con sed de aprendizaje. Tengo habilidades sólidas en la resolución de problemas técnicos, liderazgo de equipos y adaptabilidad a nuevos entornos y tecnologías. Además, me comprometo con los más altos estándares éticos, valorando la integridad y la responsabilidad en el manejo de datos y sistemas de información.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            25-dic
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            denis25dic@gmail.com
+                            ,
+                            devgtech@outlook.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Ciudad de Guatemala, Guatemala
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>   
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-cloud-arrow-up"></i>
+                            <span>Redes</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-infinity"></i>
+                            <span>DevOps</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Apps</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-shield-alt"></i> 
+                            <span>Seguridad</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Metodología</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-microchip"></i>
+                            <span>AI</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-osi "></i>
+                            <span>Open.Source</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fas fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <div class="container"> 
+                            <div class="myDIV">
+                            <i class="fab fa-square-js fa-5x" style="color: #FFD43B;"></i>
+                            <i class="fab fa-html5 fa-5x" style="color: #e77a07;"></i>	
+                            <i class="fab fa-css3-alt fa-5x" style="color: #0c4ced;"></i> 
+                            <i class="fab fa-java fa-5x"></i>	
+                            <i class="fab fa-python fa-5x" style="color: #FFD43B;"></i> 
+                            </div>
+                        </div> 
+                        <span></span> 
+                        <div class="container">  
+                            <div class="myDIV">
+                            <i class="fab fa-angular fa-5x" style="color: #ed0c0c;"></i>                        
+                            <i class="fab fa-react fa-5x" style="color: #ed0c0c;"></i>
+                            <i class="fab fa-node fa-5x" style="color: #058e0e;"></i>
+                            <i class="fa-solid fa-database fa-5x" style="color: #ed0c0c;"></i> 
+                            </div>
+                        </div>
+                        <div class="container">  
+                             <div class="myDIV">
+                                <i class="fab fa-github fa-5x" style="color: #ffffff;"></i>
+                                </div><div class="hide">Github</div>
+                            </div>       
+                    </div>
+                    
+                    
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span class="tooltip">Resolución de problemas
+                            <span class="tooltiptext">Analiza, implementa y evoluciona.</span>
+                        </span>
+                    </div>
+                    <span></span>
+                    <div class="skill">
+                        <span class="tooltip">
+                            Trabajo en equipo
+                            <span class="tooltiptext">Logros alcanzados juntos son más significativos.</span>
+                        </span>
+                    </div>
+                    <div class="skill">
+                        <span class="tooltip">
+                            Colaboración
+                            <span class="tooltiptext">Creemos juntos algo más grande que la suma de nuestras partes.</span>
+                        </span>
+                    </div>
+                    <div class="skill">
+                        <span class="tooltip">
+                            Ética profesional
+                            <span class="tooltiptext">La integridad define nuestro camino.</span>
+                        </span>
+                    </div>
+                    <div class="skill">
+                        <span class="tooltip">
+                            Curiosidad y sed de aprendizaje
+                            <span class="tooltiptext">Siempre buscando aprender algo nuevo.</span>
+                        </span>                        </div>
+                        <div class="tooltip-container" id="tooltip-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+        <!--    <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                    <i class="fab fa-java fa-3x"></i>
+                    <i class="fab fa-python fa-3x" style="color: #FFD43B;"></i>   
+                    <i class="fab fa-vuejs fa-3x" style="color: #63E6BE;"></i> 
+                    <i class="fab fa-react fa-3x" style="color: #ed0c0c;"></i>
+                    <i class="fab fa-square-js fa-3x" style="color: #FFD43B;"></i>
+                    <i class="fab fa-html5 fa-3x" style="color: #e77a07;"></i>
+                    <i class="fab fa-node fa-3x" style="color: #058e0e;"></i>
+                    <i class="fab fa-solid fa-database fa-3x" style="color: #ed0c0c;"></i>
+                    <i class="fab fa-angular fa-3x" style="color: #ed0c0c;"></i>
+                </div>
+                 --> 
+              <!--  
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+-->
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fas fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://teams.live.com/l/invite/FAA3TcQhH0DI4lVvAE"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-microsoft-teams" viewBox="0 0 16 16">
+                <path d="M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0m-2.238 9.488-.12-.002a5.2 5.2 0 0 0 .381-2.07V6.306a1.7 1.7 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.6 2.6 0 0 1-2.598 2.598z"/>
+                <path d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.68.68 0 0 1-.682.682H.682A.68.68 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945z"/>
+              </svg></a>
+            <a href="https://github.com/denis25dic"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:denis25dic@gmail.com ; devgtech@outlook.com"><i class="fas fa-envelope-square"></i></a>
+            <a href="https://www.linkedin.com/in/denis-grijalva"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div> <p>© 2024. Todos los derechos reservados.   </p></div>
+    </footer>
+
+    <script src="script.js"></script>
+   
+        
+</body>
+</html>
